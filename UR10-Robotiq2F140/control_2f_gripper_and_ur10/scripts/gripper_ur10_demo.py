@@ -10,12 +10,11 @@ from six.moves import input
 
 # UR10
 from moveit_commander import RobotCommander, MoveGroupCommander
-from moveit_commander import PlanningSceneInterface, roscpp_initialize, roscpp_shutdown
+from moveit_commander import PlanningSceneInterface, roscpp_initialize
 from geometry_msgs.msg import PoseStamped
 from moveit_msgs.msg import Grasp, GripperTranslation, PlaceLocation, MoveItErrorCodes, DisplayTrajectory 
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from tf.transformations import euler_from_quaternion, quaternion_from_euler
-import random
 
 GROUP_NAME_ARM = "manipulator"
 FIXED_FRAME = 'world'

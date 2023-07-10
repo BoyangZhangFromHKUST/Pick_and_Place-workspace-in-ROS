@@ -165,6 +165,7 @@ catkin_install_python(PROGRAMS
   scripts/robotiq_2f_gripper_simple_control.py
   scripts/gripper_basic_functions.py
   scripts/action1.py
+  scripts/pick_and_place_demo.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
