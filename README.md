@@ -1,28 +1,34 @@
 # Pick_and_Place-workspace-in-ROS
 
-## Connect UR10 with ip:
+## 1. Connect UR10 with ip:
 
 `roslaunch ur_robot_driver ur10_bringup.launch robot_ip:=192.168.1.102`
 
-## Execute motion planning:
+## 2. Execute motion planning:
 
 `roslaunch ur10_moveit_config moveit_planning_execution.launch`
 
-## Connect Robotiq Gripper with RTU communication with USB port:
+## 3. Connect Robotiq Gripper with RTU communication with USB port:
 
 `rosrun robotiq_2f_gripper_control Robotiq2FGripperRtuNode.py /dev/ttyUSB1`
 
-## Publish the node of the tactile sensor:
+## 4. Publish the node of the tactile sensor:
 
 `rosrun tactile_sensor class_touch_edit.py`
 
-## Waiting for subscription:
+## 5. Waiting for subscription:
 
 `rosrun tactile_sensor ur10_demo.py`
 
-## Control the gripper moving:
+## 6. Control the gripper moving:
 
 `rosrun control_2f_gripper_and_ur10 action1.py`
+
+## Demo:
+
+Run after step 4
+
+`rosrun control_2f_gripper_and_ur10 pick_and_place_demo.py`
 
 ## Description:
 
