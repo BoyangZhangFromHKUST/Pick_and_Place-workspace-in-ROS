@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node name="touch" pkg="tactile_sensor" type="class_touch_edit.py" >
+        
+    </node>
+
+    <node name="move" pkg="tactile_sensor" type="ur10_demo.py" >
+        
+    </node>
+
+</launch>
